@@ -5,7 +5,7 @@
 # Date: 1/16/2017
 #
 ################################################################################
-from mattermark import mattermark
+from .mattermark import mattermark
 import yaml
 import pprint
 
@@ -34,7 +34,7 @@ foundry_details = mm.investorDetails(foundryID)
 pp.pprint(foundry_details)
 
 # See how many queries we have used
-print(mm.queries)
+print((mm.queries))
 
 # Get some of the funding events that have happened today
 pp.pprint(mm.fundingEvents())
@@ -49,7 +49,7 @@ mmID = mattermark_search[0]["object_id"]
 
 # Get details on the company
 mattermark_details = mm.companyDetails(mmID)
-print(mattermark_details["mattermark_score"])
+print((mattermark_details["mattermark_score"]))
 
 # Get the key personnel
 key_people = mm.companyPersonnel(mmID)

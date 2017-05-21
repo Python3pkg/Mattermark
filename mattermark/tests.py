@@ -7,7 +7,7 @@
 ################################################################################
 import unittest
 import yaml
-from mattermark import mattermark
+from .mattermark import mattermark
 
 #
 # Extends TestCase to test our mattermark api wrapper
